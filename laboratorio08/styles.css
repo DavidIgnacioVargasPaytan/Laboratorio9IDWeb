@@ -1,0 +1,21 @@
+.caja{
+    width: 100px;
+    padding: 20px;
+    border: 2px solid green;
+    margin: 5px;
+    background: black;
+    color: white;
+}
+.con-border{
+    box-sizing: border-box;
+}
+.flex-container{
+    display: flex;
+    background: blue;
+    padding: 10px;
+}
+.flex-item{
+    flex: 1;
+    text-align: center;
+    border-radius: 6px;
+}
