@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box; 
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background: #f2f6fb;
+    
+    display: grid; 
+    gap: 20px; 
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 15px 20px; 
+    background: #0b1320;
+    color: #fff;
+}
+
+nav {
+    padding: 10px 20px;
+    background: #e6ecf3;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #0b1320;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    border-color: #0b1320;
+}
+
+.sección-caja {
+    background: #fff;
+    padding: 20px; 
+    border-radius: 10px; 
+    border: 1px solid #ddd;
+}
+
+.grid-principal {
+    display: grid;
+    gap: 20px;
+    padding: 0 20px;
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+}
+
+.hero {
+    min-height: 400px; 
+    background: #e6ecf3;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.flex-centrado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.boton-principal {
+    display: inline-block;
+    background-color: #0b1320;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.contacto input, .contacto button {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto input {
+    width: 200px;
+}
+
+footer {
+    text-align: center;
+    background: #0b1320;
+    color: #fff;
+    padding: 15px;
+}

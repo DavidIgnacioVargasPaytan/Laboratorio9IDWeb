@@ -1,4 +1,38 @@
 body{
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+    gap: 16px;
+    margin: 0;
+    color: green;
+    background-color: white;
+    min-height: 100vh;
+}
+header, nav, footer{
+    padding: 16px;
+    text-align: center;
+}
+nav{
+    background: lightgray;
+    border-radius: 8px;
+}
+header, footer{
+    background: blue;
+    color: white;
+}
+main{
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+}
+article{
+    flex: 3;
+    background: lightgray;
+    padding: 16px;
+    border-radius: 8px;
+}
+aside{
+    flex: 3;
+    background: lightgray;
+    padding: 16px;
+    border-radius: 8px;
 }

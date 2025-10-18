@@ -1,0 +1,126 @@
+html {
+    box-sizing: border-box; 
+}
+*, *::before, *::after {
+    box-sizing: inherit; 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: system-ui, sans-serif;
+    background: #f2f6fb;
+    display: flex; 
+    flex-direction: column;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    padding: 10px;
+    background: #0b1320;
+    color: #fff;
+}
+nav {
+    padding: 10px;
+    background: #e6ecf3;
+    margin-bottom: 20px; 
+    display: flex; 
+    gap: 15px;
+    align-items: center;
+}
+nav h1 {
+    font-size: 1.2em;
+}
+nav a {
+    text-decoration: none;
+    color: #0b1320;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+nav a:hover {
+    border-color: #0b1320;
+}
+.diseño-dashboard {
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    flex-grow: 1;
+}
+.barra-lateral {
+    background: #0b1320; 
+    color: #fff;
+    padding: 20px 10px;
+    margin: 0; 
+    border-right: 1px solid #333;
+}
+.info-usuario {
+    text-align: center;
+    padding: 10px; 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #333; 
+}
+.icono-usuario {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.enlaces-navegacion {
+    list-style: none;
+}
+.enlaces-navegacion li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+.área-contenido {
+    padding: 20px;
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+}
+.contenedor-tarjetas {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+.tarjeta-estadística {
+    flex: 1; 
+    min-width: 150px;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 15px; 
+    margin: 0; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.valor-estadística {
+    font-size: 2em;
+    font-weight: bold;
+    color: #0b1320;
+    margin-top: 5px;
+}
+.sección-gráficos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.fila-gráficos {
+    display: flex;
+    gap: 20px;
+}
+.caja-gráfico {
+    background: #fff;
+    border: 1px solid #ddd; 
+    padding: 20px; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.gráfico-barras {
+    flex: 3; 
+}
+.gráfico-torta {
+    flex: 1; 
+    text-align: center;
+}
